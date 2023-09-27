@@ -1,3 +1,13 @@
+formatar código: alt + shift (o que fica acima do Ctrl) + f
+
+bibliotecas:
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+setlocale(LC_ALL,"portuguese");
+
+No código ao fim de todas as linhas sempre colocar ; 
+
 int -> numeros inteiros
 float -> numeros reais
 printf -> mostrar conteudo na tela
@@ -11,8 +21,11 @@ char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
 \n -> é quebra de linha
 system("cls || clear"); -> limpar tela
 scanf -> equivale ao leia, mas não serve o espaço
+scanf("%i", &valor);
 fflush(stdin - padrão de entrada) -> limpa o cache do input
 fgets -> pega os caracteres que vem depois do espaço
 //fgets(nome, 250, stdin);
 nome[strcspn(nome, "\n")] = 0;//
 gets -> para quando tiver dois ou mias caracteres
+if -> é se
+else -> se não
