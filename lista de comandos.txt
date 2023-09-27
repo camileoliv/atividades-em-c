@@ -6,6 +6,9 @@ bibliotecas:
 #include <locale.h>
 setlocale(LC_ALL,"portuguese");
 
+= Atribuoção
+== Comparação
+
 No código ao fim de todas as linhas sempre colocar ; 
 
 int -> numeros inteiros
