@@ -6,31 +6,32 @@ bibliotecas:
 #include <locale.h>
 setlocale(LC_ALL,"portuguese");
 
-= Atribuoção
-== Comparação
-!= Diferente
-! Negação
-
 No código ao fim de todas as linhas sempre colocar ; 
 
 int -> numeros inteiros
 float -> numeros reais
 printf -> mostrar conteudo na tela
+char -> quando é apenas um caracter
+char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
+gets -> para quando tiver dois ou mias caracteres
+strcpy -> copiar a string
+
 %d/%i -> marcador para indicar onde será mostrado um conteúdo
 %.2f -> valor tipo float
 %f -> no scan 
 %c -> para caracter
 %s -> cadeia de caracteres
-char -> quando é apenas um caracter
-char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
+
 \n -> é quebra de linha
 system("cls || clear"); -> limpar tela
+
 scanf -> equivale ao leia, mas não serve o espaço
 scanf("%i", &valor);
-fflush(stdin - padrão de entrada) -> limpa o cache do input
-fgets -> pega os caracteres que vem depois do espaço
-//fgets(nome, 250, stdin);
-nome[strcspn(nome, "\n")] = 0;//
-gets -> para quando tiver dois ou mias caracteres
+
+fflush(stdin - padrão de entrada caso comece o código pedindo um número e depois venha um caracter) -> limpa o cache do input
+
 if -> é se
 else -> se não
+
+fgets -> pega os caracteres que vem depois do espaço
+//fgets(nome, 250, stdin);
