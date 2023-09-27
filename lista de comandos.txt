@@ -9,6 +9,7 @@ setlocale(LC_ALL,"portuguese");
 = Atribuoção
 == Comparação
 != Diferente
+! Negação
 
 No código ao fim de todas as linhas sempre colocar ; 
 
