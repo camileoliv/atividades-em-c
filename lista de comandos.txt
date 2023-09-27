@@ -8,6 +8,7 @@ setlocale(LC_ALL,"portuguese");
 
 = Atribuoção
 == Comparação
+!= Diferente
 
 No código ao fim de todas as linhas sempre colocar ; 
 
