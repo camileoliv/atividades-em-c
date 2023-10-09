@@ -18,6 +18,7 @@ strcpy -> copiar a string
 
 if else
 do while
+switch case
 
 ctrl + shift + L -> para selecionar duas palavras e modificar elas
 
