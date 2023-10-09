@@ -36,6 +36,25 @@ scanf("%i", &valor);
 
 fflush(stdin - padrão de entrada caso comece o código pedindo um número e depois venha um caracter) -> limpa o cache do input
 
+! BASE DE CÓDIGOS !
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+ int main () {
+    setlocale(LC_ALL,"portuguese");
+
+    //Declarando variaveis
+
+    //Solicitando dados
+
+    //Analise de dados
+
+    //Exibição de resultados
+    return 0;
+ }
+! BASE DE CÓDIGOS !
+
 if -> é se
 else -> se não
 
