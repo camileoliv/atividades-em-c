@@ -15,6 +15,7 @@ char -> quando é apenas um caracter
 char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
 gets -> para quando tiver dois ou mias caracteres
 strcpy -> copiar a string
+ctrl + shift + L -> para selecionar duas palavras e modificar elas
 
 %d/%i -> marcador para indicar onde será mostrado um conteúdo
 %.2f -> valor tipo float
