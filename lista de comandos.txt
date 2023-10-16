@@ -4,6 +4,7 @@ bibliotecas:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <string.h>
 setlocale(LC_ALL,"portuguese");
 
 No código ao fim de todas as linhas sempre colocar ; 
@@ -15,12 +16,9 @@ char -> quando é apenas um caracter
 char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
 gets -> para quando tiver dois ou mias caracteres
 strcpy -> copiar a string
-
-if else
-do while
-switch case
-
-ctrl + shift + L -> para selecionar duas palavras e modificar elas
+strcmp -> comparar string
+scanf -> equivale ao leia, mas não serve o espaço
+scanf("%i", &valor);
 
 %d/%i -> marcador para indicar onde será mostrado um conteúdo
 %.2f -> valor tipo float
@@ -28,11 +26,19 @@ ctrl + shift + L -> para selecionar duas palavras e modificar elas
 %c -> para caracter
 %s -> cadeia de caracteres
 
+if else
+do while
+switch case
+operação ternária, é usado em perguntas pequenas ->  variavel = variavel1 < variavel2 ? variavel1 : variavel2;
+|| -> equivale ao OU
+&& -> equivale ao E 
+
+ctrl + shift + L -> para selecionar duas palavras e modificar elas
+
+& -> na scan quando for pedir algo para o usuario
+' ' -> aspas simples quando for pegar um caracter
 \n -> é quebra de linha
 system("cls || clear"); -> limpar tela
-
-scanf -> equivale ao leia, mas não serve o espaço
-scanf("%i", &valor);
 
 fflush(stdin - padrão de entrada caso comece o código pedindo um número e depois venha um caracter) -> limpa o cache do input
 
@@ -54,9 +60,6 @@ fflush(stdin - padrão de entrada caso comece o código pedindo um número e dep
     return 0;
  }
 ! BASE DE CÓDIGOS !
-
-if -> é se
-else -> se não
 
 fgets -> pega os caracteres que vem depois do espaço
 //fgets(nome, 250, stdin);
