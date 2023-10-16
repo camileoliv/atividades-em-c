@@ -4,27 +4,45 @@
 #include <string.h>
 
 int main () {
-    int contador = 0;
-    float numero = 0;
-    float media;
+    setlocale(LC_ALL,"portuguese");
+
+    int i= 0;
+    int numero = 0;
     float soma;
+    float par;
+    float parCont;
+    float imparCont;
+    float mediaPar;
+    float media;
 
     do
     {
-        printf("Digite o %iÂ° valor: ",contador+1);
-        scanf("%f", &numero);
+        printf("Digite o %i° número: ",i+1);
+        scanf("%i", &numero);
 
         if (numero > 0)
         {
             soma += numero;
-            contador++;
+
+        if (numero % 2 == 0)
+        {
+           par += numero;
+           parCont++;
+        } else {
+            imparCont ++;
         }
+        i++;       
+        } 
         
-    } while (numero > 0);
+    } while (numero != 0);
 
-    media = soma / contador;
-
-    printf("MÃ©dia: %.2f", media);
+    mediaPar = par / parCont;
+    media = soma / i;
+    
+    printf("\n Quantidade de números pares: %f", parCont);
+    printf("\n Quantidade de ímpares: %f", imparCont);
+    printf("\n Média de pares: %.2f", mediaPar);
+    printf("\n Média geral: %.2f", media);
 
     return 0;
 }
