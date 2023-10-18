@@ -6,42 +6,42 @@ int main () {
     setlocale(LC_ALL,"portuguese");
     int codigo;
 
-    printf("\n---Escolha o dia da semana digitando seu código--\n");
+    printf("\n---Escolha o dia da semana digitando seu cÃ³digo--\n");
     printf("1 \t Domingo \n");
     printf("2 \t Segunda\n");
-    printf("3 \t Terça\n");
+    printf("3 \t TerÃ§a\n");
     printf("4 \t Quarta\n");
     printf("5 \t Quinta\n");
     printf("6 \t Sexta\n");
-    printf("7 \t Sábado\n");
+    printf("7 \t SÃ¡bado\n");
     printf("\n---------------------FIM------------------------\n");
     scanf("%i", &codigo);
 
     switch (codigo)
     {
     case 1:
-        printf("Domingo é final de semana");
+        printf("Domingo Ã© final de semana");
         break;
         case 2:
-        printf("Segunda é dia útil");
+        printf("Segunda Ã© dia Ãºtil");
         break;
         case 3:
-        printf("Terça é dia útil");
+        printf("TerÃ§a Ã© dia Ãºtil");
         break;
         case 4:
-        printf("Quarta é dia útil");
+        printf("Quarta Ã© dia Ãºtil");
         break;
         case 5:
-        printf("Quinta é dia útil");
+        printf("Quinta Ã© dia Ãºtil");
         break;
         case 6:
-        printf("Sexta é dia útil");
+        printf("Sexta Ã© dia Ãºtil");
         break;
         case 7:
-        printf("Sábado é final de semana");
+        printf("SÃ¡bado Ã© final de semana");
         break;
     default:
-        printf("Erro inválido");
+        printf("Erro invÃ¡lido");
         break;
     }
 
