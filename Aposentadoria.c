@@ -13,7 +13,7 @@ int main () {
 
 
     //Solicitando dados
-    printf("Digite seu código de empregado: ");
+    printf("Digite seu cÃ³digo de empregado: ");
     gets(codigo);
 
     printf("Digite seu ano de nascimento:");
@@ -30,15 +30,15 @@ int main () {
     {
         strcpy(resultado, "Requerer aposentadoria");
     } else {
-        strcpy(resultado, "Não querer aposentadoria");
+        strcpy(resultado, "NÃ£o querer aposentadoria");
     }
 
     system("cls || clear");
 
-    printf("Código do funcionário: %s \n", codigo);
+    printf("CÃ³digo do funcionÃ¡rio: %s \n", codigo);
     printf("Idade: %i \n", idade);
     printf("Tempo trabalhado: %i \n", tempo);
-    printf("Resultado da ánalise: %s \n", resultado);
+    printf("Resultado da Ã¡nalise: %s \n", resultado);
 
     return 0 ;
 }
