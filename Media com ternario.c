@@ -32,7 +32,7 @@ int main()
     menor = primeiroValor < segundoValor ? primeiroValor : segundoValor;
 
     // Mostrando dados
-    printf("A média dos valores: %.2f \n", media);
+    printf("A mÃ©dia dos valores: %.2f \n", media);
     printf("A soma dos valores: %.2f \n", soma);
     printf("Produto resultado dos valores: %.2f \n", produto);
     printf("O valor maior: %i \n", maior);
