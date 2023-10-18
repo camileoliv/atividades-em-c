@@ -11,12 +11,12 @@ int main()
     float valor;
 
     //
-    printf(" Escolha o prato digitando seu cÛdigo \n");
+    printf(" Escolha o prato digitando seu c√≥digo \n");
     printf("1- Picanha \n");
     printf("2- Lasanha \n");
     printf("3- Strogonoff \n");
     printf("4- Bife Acebolado \n");
-    printf("5- P„o com ovo\n");
+    printf("5- P√£o com ovo\n");
     scanf("%i", &codigo);
 
     switch (codigo)
@@ -39,10 +39,10 @@ int main()
         break;
     case 5:
         valor = 5.00;
-        strcpy(prato, "P„o com ovo");
+        strcpy(prato, "P√£o com ovo");
         break;
     default:
-        printf("Erro - inv·ido");
+        printf("Erro - inv√°ido");
         break;
     }
 
