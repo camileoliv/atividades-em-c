@@ -17,7 +17,7 @@ int main () {
 
     do
     {
-        printf("Digite o %i° número: ",i+1);
+        printf("Digite o %iÂ° nÃºmero: ",i+1);
         scanf("%i", &numero);
 
         if (numero > 0)
@@ -39,10 +39,10 @@ int main () {
     mediaPar = par / parCont;
     media = soma / i;
     
-    printf("\n Quantidade de números pares: %f", parCont);
-    printf("\n Quantidade de ímpares: %f", imparCont);
-    printf("\n Média de pares: %.2f", mediaPar);
-    printf("\n Média geral: %.2f", media);
+    printf("\n Quantidade de nÃºmeros pares: %f", parCont);
+    printf("\n Quantidade de Ã­mpares: %f", imparCont);
+    printf("\n MÃ©dia de pares: %.2f", mediaPar);
+    printf("\n MÃ©dia geral: %.2f", media);
 
     return 0;
 }
