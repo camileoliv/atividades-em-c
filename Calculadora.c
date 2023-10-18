@@ -11,11 +11,11 @@ int main()
     int operador;
     int resultado;
 
-    printf(" Escolha uma operação \n");
+    printf(" Escolha uma operaÃ§Ã£o \n");
     printf("1- Soma \n");
-    printf("2- Subtração \n");
-    printf("3- Multiplicação \n");
-    printf("4- Divisão \n");
+    printf("2- SubtraÃ§Ã£o \n");
+    printf("3- MultiplicaÃ§Ã£o \n");
+    printf("4- DivisÃ£o \n");
     scanf("%i", &operador);
 
     printf("Digite o primeiro valor:");
@@ -41,13 +41,13 @@ int main()
         resultado = primeiroNumero / segundoNumero;
         break;
     default:
-        printf("Erro - operação inválida");
+        printf("Erro - operaÃ§Ã£o invÃ¡lida");
         break;
     }
 
-    printf("Primeiro número: %i \n", primeiroNumero);
-    printf("Primeiro número: %i \n", segundoNumero);
-    printf("Operação escolhida: %i \n", operador);
+    printf("Primeiro nÃºmero: %i \n", primeiroNumero);
+    printf("Primeiro nÃºmero: %i \n", segundoNumero);
+    printf("OperaÃ§Ã£o escolhida: %i \n", operador);
     printf("Resultado: %i \n", resultado);
 
     return 0;
