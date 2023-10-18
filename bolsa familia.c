@@ -2,48 +2,76 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
- int main () {
-    setlocale(LC_ALL,"portuguese");
+int main()
+{
+  setlocale(LC_ALL, "portuguese");
 
-    //Declarando variaveis
+  // Declarando variaveis
+  int idade;
+  int i =0;
+  int old = 0;
+  int menu;
+  int newBorn = 0;
+  float salario;
+  float mulheresSalario;
+  float mediaSalario;
+  char sexo[500];
 
-    //Solicitando dados
-    printf("Código |  Descrição \n");
+  do
+  {
+
+    printf("Codigo |  Descricacao \n");
     printf("   1   |  Adicionar pessoa \n");
     printf("   2   | Sair e exibir resultados \n");
-    printf("Escolha o código:");
-    scanf("%d",&menu)
+    printf("Escolha o codigo:");
+    scanf("%d", &menu);
 
-    switch (menu)
+        switch (menu)
     {
-    case 1: printf("Digite sua idade: ");
-    scanf("%i",&idade);
+    case 1:
+      printf("Digite sua idade: ");
+      scanf("%i", &idade);
+      
+      fflush(stdin);
 
-    printf("Gênero: (M) Masculino (F) Feminino");
-    scanf("%c",&sexo);
+      printf("Genero: (M) Masculino (F) Feminino");
+      scanf("%c", &sexo);
 
-    printf("Digite o seu último/atual salário:");
-    scanf("%i",&salario);
+      printf("Digite o seu ultimo/atual salario:");
+      scanf("%f", &salario);
 
-    if (sexo = 'F')
-    {
-      mulheresSalario = 
-    }
-    
+      //if (sexo = 'F' && salario >= 5.000 )
+      //{
+        //mulheresSalario++;
+      //}
+
+      if (i == 0)
+      {
+        old = idade;
+        newBorn = idade;
+        i++;
+      }
+      else if (idade > old)
+      {
+        old = idade;
+      }
+      else if (idade < newBorn)
+      {
+        newBorn = idade;
+      }
+
       break;
-      case 2:
-      printf("Média de salário: %.2f", mediaSalario);
-      printf("Pessoa mais velha: %s", old);
-      printf("Pessoa mais nova: %s", newBorn);
-    
+    case 2:
+      printf("\n Media de salario: %.2f", mediaSalario);
+      //printf("\n Numero de mulheres com salario acima de 5.000: %.3f", mulheresSalario);
+      printf("\n Pessoa mais velha: %s", old);
+      printf("\n Pessoa mais nova: %s", newBorn);
+
     default:
-
-
+      printf("Opcao invalida!");
       break;
     }
+  } while (menu != 2);
 
-    //Analise de dados
-
-    //Exibição de resultados
-    return 0;
- }
+  return 0;
+}
