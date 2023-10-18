@@ -15,9 +15,9 @@ int main () {
     //Analise
     if (idade < 18 || idade > 65)
     {
-      printf("Não é obrigado a votar");
+      printf("NÃ£o Ã© obrigado a votar");
     } else {
-        printf("É obrigado a votar");
+        printf("Ã‰ obrigado a votar");
     }
     
 
