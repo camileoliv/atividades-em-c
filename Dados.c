@@ -4,76 +4,74 @@
 #include <string.h>
 int main()
 {
-  setlocale(LC_ALL, "portuguese");
-  
-  int idade;
-  int i =0;
-  int old = 0;
-  int newBorn = 0;
-  int menu;
-  float salario;
-  float mulheresSalario;
-  float mediaSalario;
-  char sexo;
+    setlocale(LC_ALL, "portuguese");
 
- do {
-  
-    printf("Codigo |  Descricacao \n");
-    printf("   1   |  Adicionar pessoa \n");
-    printf("   2   | Sair e exibir resultados \n");
-    printf("Escolha o codigo:");
-    scanf("%d", &menu);
-    
-     system("clear||cls");
+    int idade;
+    int i = 0;
+    int old = 0;
+    int newBorn = 999;
+    int menu;
+    float soma;
+    float salario;
+    int mulheresSalario;
+    float mediaSalario;
+    char sexo;
 
-     switch (menu)  {
-     case 1:
-      printf("Digite sua idade: ");
-      scanf("%i", &idade);
-      
-      fflush(stdin);
+    do
+    {
 
-      printf("Genero: (M) Masculino (F) Feminino: ");
-      scanf("%c", &sexo);
-      sexo = toupper (sexo);
+        printf("Codigo |  Descricacao \n");
+        printf("   1   |  Adicionar pessoa \n");
+        printf("   2   | Sair e exibir resultados \n");
+        printf("Escolha o codigo:");
+        scanf("%d", &menu);
 
-      printf("Digite o seu ultimo/atual salario: ");
-      scanf("%f", &salario);
-      
-      system("clear||cls");
+        system("clear||cls");
 
-      if (sexo = 'F' && salario >= 5.000 )
-      {
-        mulheresSalario++;
-      }
+        switch (menu)
+        {
+        case 1:
+            printf("Digite sua idade: ");
+            scanf("%d", &idade);
 
+            fflush(stdin);
 
-      if (i == 0)
-      {
-        old = idade;
-        newBorn = idade;
-        
-        old: old > newBorn? old : newBorn;
-        newBorn: old < newBorn? old : newBorn;
-        
-        i++;
-      }
-      
-      mediaSalario = soma / i
+            printf("Genero: (M) Masculino (F) Feminino: ");
+            scanf("%c", &sexo);
+            sexo = toupper (sexo);
 
-      break;
-     case 2:
+            printf("Digite o seu ultimo/atual salario: ");
+            scanf("%f", &salario);
 
-      printf("Media de salario: %.2f", mediaSalario);
-      printf("Pessoa mais velha: %s", old);
-      printf("Pessoa mais nova: %s", newBorn);
-      printf("\n Numero de mulheres com salario acima de 5.000: %.3f", mulheresSalario);
-      
-     default:
-      printf("Opcao invalida!");
-      break;
-    }
- } while (menu != 2);
+            system("clear||cls");
 
-  return 0;
+            if (sexo == 'F' && salario >= 5000)
+            {
+                mulheresSalario++;
+            }
+
+            old = idade > old ? idade : old;
+            newBorn = idade < newBorn ? idade : newBorn;
+
+            i++; // contador.
+            soma += salario;
+
+            mediaSalario = soma / i;
+
+            break;
+        case 2:
+
+            printf("\nMedia de salario: %.2f", mediaSalario);
+            printf("\nPessoa mais velha: %d", old);
+            printf("\nPessoa mais nova: %d", newBorn);
+            printf("\nNumero de mulheres com salario acima de 5.000: %i", mulheresSalario);
+
+            break;
+        default:
+            printf("Opcao invalida!");
+            break;
+        }
+    } while (menu != 2);
+
+    return 0;
 }
