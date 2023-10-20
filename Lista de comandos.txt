@@ -1,0 +1,91 @@
+Atalhos do teclado:
+Selecionar duas palavras iguais e modificar para uma nova -> ctrl + shift + L 
+Formatar código -> alt + shift (o que fica acima do Ctrl) + f
+
+Bibliotecas:
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+setlocale(LC_ALL,"portuguese");
+
+No código ao fim de todas as linhas sempre colocar ;
+fflush(stdin); -> caso comece o código pedindo um número e depois venha um caracter
+system("cls || clear"); -> limpar tela
+
+Variaveis:
+int -> numeros inteiros
+float -> numeros reais
+char -> quando é apenas um caracter
+char [ ] -> no colchete indica a quantidade de caracteres que espera de letras
+
+Laços de repetição:
+for (para) -> o código irá executar uma quantidade pré determinada de vezes
+while (enquanto) -> a condição é especificada no inicio e ele vai fazer o laço enquanto ela for verdadeira  
+do while (enquanto faça)-> o código irá executar sem uma quantidade de vezes pré determinada, até que uma condição especificada no "while" seja selecionada
+
+Instruções:
+if else (se/senão)-> se a instrução dentro dos parenteses for verdadeira, será executado um código descrito dentro das chaves  
+switch case (escolha/caso) -> quando tem muitas instruções, seja usa o switch case para executar códigos diferentes, sem a necessidade de vários if else 
+
+Exibir:
+printf -> mostrar conteúdo na tela
+
+Leitura:
+scanf -> equivale ao leia, mas não serve o espaço
+scanf("%i", &valor);
+gets -> para quando tiver dois ou mais caracteres (não precisa de porcentagem ou &)
+fgets -> pega os caracteres que vem depois do espaço, no lugar de nome coloca a variavel onde deve ir o conteúdo e o número é a quantidade máxima de caracteres
+//fgets(nome, 250, stdin);
+
+& -> no scanf quando for pedir algo para o usuario
+' ' -> aspas simples quando for pegar um caracter
+\n -> é quebra de linha
+
+Porcentagens que ficam dentro do scanf:
+%d/%i -> marcador para indicar onde será mostrado um conteúdo
+%.2f -> valor tipo float
+%f -> no scan 
+%c -> para caracter
+%s -> cadeia de caracteres
+
+Funções:
+strcpy -> copiar a string
+strcmp -> comparar as strings
+
+Operadores lógicos:
+|| -> equivale ao OU
+&& -> equivale ao E
+! -> equivale ao NÃO
+
+Operadores de igualdade:
+== -> equivale ao igual
+!= -> equivale a diferença
+
+Operadores compostos:
+// Ao invés de escrever: numero = numero + 5, com operador composto dá pra escrever: numero += 5 //
++= -> abreviação de uma conta de soma
+-= -> abreviação de uma conta de subtração
+*= -> abreviação de uma conta de multiplicação
+/= -> abreviação de uma conta de divisão
+
+Operação ternária, é usado em perguntas pequenas ->  variavel = variavel1 < variavel2 ? variavel1 : variavel2;
+
+! BASE DE CÓDIGOS !
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+ int main () {
+    setlocale(LC_ALL,"portuguese");
+
+    //Declarando variaveis
+
+    //Solicitando dados
+
+    //Analise de dados
+
+    //Exibição de resultados
+    return 0;
+ }
+! BASE DE CÓDIGOS !
