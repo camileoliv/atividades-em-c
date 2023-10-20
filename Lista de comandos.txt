@@ -24,9 +24,9 @@ for (para) -> o código irá executar uma quantidade pré determinada de vezes
 while (enquanto) -> a condição é especificada no inicio e ele vai fazer o laço enquanto ela for verdadeira  
 do while (enquanto faça)-> o código irá executar sem uma quantidade de vezes pré determinada, até que uma condição especificada no "while" seja selecionada
 
-Instruções/Condições:
-if else (se/senão)-> se a instrução dentro dos parenteses for verdadeira, será executado um código descrito dentro das chaves  
-switch case (escolha/caso) -> quando tem muitas instruções, seja usa o switch case para executar códigos diferentes, sem a necessidade de vários if else 
+Condições:
+if else (se/senão)-> se a condição dentro dos parenteses for verdadeira, será executado um código descrito dentro das chaves  
+switch case (escolha/caso) -> quando tem muitas condições, seja usa o switch case para executar códigos diferentes, sem a necessidade de vários if else 
 
 Exibir:
 printf -> mostrar conteúdo na tela
